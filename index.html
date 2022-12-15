@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+</head>
+<body>
+    <h1>Welcome<br>to<br>web<br>worker</h1>
+    <div class="control">
+        <form>
+            <div>
+                <label>
+                    First Number
+                    <input type="text" id="num1">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Second Number
+                    <input type="text" id="num2">
+                </label>
+            </div>
+            <p class="result">Result: 0</p>
+        </form>
+    </div>
+    <div class="control">
+        <ul>
+            <li>
+                <a id="firstLink" href="javascript:tasks.sendQuery('getDifference', 5, 3)">5-3</a>
+            </li>
+            <li>
+                <a href="javascript:tasks.sendQuery('wait')">After 3 seconds</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
